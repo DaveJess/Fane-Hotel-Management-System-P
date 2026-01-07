@@ -1,7 +1,10 @@
 import * as dotenv from "dotenv";
+import path from "path";
 import express from "express";
 
-dotenv.config();
+// Load environment variables from the repo root `config.env` for local dev
+dotenv.config({ path: path.resolve(__dirname, "../../..", "config.env") });
+
 import connectDB from "./lib/db";
 import authRouter from "./routes/auth";
 
