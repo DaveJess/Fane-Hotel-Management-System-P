@@ -1,7 +1,16 @@
 {
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  },
   "files": [],
   "references": [
-    { "path": "./tsconfig.app.json" },
+    { "path": "./packages/client/tsconfig.client.json" },
+    { "path": "./packages/server/tsconfig.server.json" },
     { "path": "./tsconfig.node.json" }
   ]
 }
