@@ -12,6 +12,16 @@
     "dev:server": "npm --workspace packages/server run dev",
     "dev": "npm run dev:server & npm run dev:client",
     "build:client": "npm --workspace packages/client run build",
-    "build:server": "npm --workspace packages/server run build"
+    "build:server": "npm --workspace packages/server run build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/react": "^19.2.7",
+    "@types/supertest": "^2.0.12",
+    "jest": "^29.0.0",
+    "nodemon": "^3.1.11",
+    "supertest": "^6.0.0",
+    "ts-jest": "^29.0.0"
   }
 }

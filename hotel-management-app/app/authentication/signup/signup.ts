@@ -1,5 +1,3 @@
-// Converted to Express route: see packages/server/src/routes/auth.ts
-// Original Next handler preserved here for reference (will remove after migration)
 import bcrypt from "bcryptjs";
 import User from "../../../src/models/user.model";
 import connectDB from "../../../src/lib/db";
@@ -25,6 +23,9 @@ export async function POST(req: Request) {
 
   return new Response(JSON.stringify({ message: "Account Created" }), { status: 201 });
 }; 
+
+
+
 
 
 
